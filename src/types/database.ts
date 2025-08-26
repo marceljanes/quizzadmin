@@ -24,7 +24,6 @@ export interface ExamPage {
 }
 
 export interface Question {
-  idx: number;
   id: string;
   question: string;
   answers: Answer[];
@@ -33,6 +32,8 @@ export interface Question {
   category: string | null;
   exam_code: string;
   inactive: boolean;
+  updated_at?: string; // added
+  created_at?: string; // added for recent activity
 }
 
 export interface Answer {
